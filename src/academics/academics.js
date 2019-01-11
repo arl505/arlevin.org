@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import CustomNavBar from "../CustomNavBar"
 
-class Experiences extends Component {
+class Academics extends Component {
     render() {
         return (
             <div>
             <CustomNavBar/>
-            <Button color="danger">Experience</Button>
+            <Button color="danger">Academics</Button>
             </div>
         )
     }
 }
 
-export default Experiences;
+export default Academics;
