@@ -1,0 +1,29 @@
+.NavbarItems:hover{
+    color: black;
+    margin: 5px;
+    color: black;
+    text-decoration: none;
+}
+.NavbarItems{
+    color: black;
+    margin: 5px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.NavbarBrand:hover{
+    color: black;
+    margin: 5px;
+    color: black;
+    text-decoration: none;
+}
+.NavbarBrand{
+    color: black;
+    margin: 5px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.backdrop{
+    background-color: #efefef;
+}
