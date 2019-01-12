@@ -13,8 +13,10 @@ class App extends Component {
 
   render() {
     return (
+      <div className="backdrop" style={{"minHeight":"100vh", "height":"100"}}>
       <BrowserRouter>
-        <div className="backdrop" style={{"height":"100vh"}}>
+      <div>
+        <div className="webNavBar">
           <Navbar >
               <NavbarBrand className="NavbarBrand" tag={Link} to="/">Alec Levin</NavbarBrand>
               <Nav>
@@ -34,7 +36,7 @@ class App extends Component {
                 </NavItem>
               </Nav>
           </Navbar>
-
+          </div>
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/academics" component={Academics} />
@@ -42,8 +44,9 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
           <Route path="/" component={Home} /> {/* this line comes last and will be the default (or no matches)*/}
          </Switch>
-        </div>
+         </div>
     </BrowserRouter>
+    </div>
     );
   }
 }

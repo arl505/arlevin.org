@@ -1,40 +1,43 @@
-.helloH1{
+.content{
+    margin-top: 5.5em;
+}
+
+.webHelloH1{
     font-weight: 300;
-}
-
-.buildH2{
-    font-weight: 200;
-}
-
-.intro{
-    position: relative;
-    top: 1em;
-    left: 0;
-    right: 0;
     text-align: center;
 }
 
-.outro{
-    position: absolute;
-    bottom: .5em;
-    left: 0;
-    right: 0;
-    text-align: center;
+.webBuildH2{
     font-weight: 200;
-}
-
-.general{
-    margin-left: 1em;
-    margin-right: 1em;
-    font-weight: 200;
-}
-
-.profilePicDiv{
     text-align: center;
-    vertical-align: center;
-    margin-top: 2em;
 }
 
-.profilePic{
-    width: 40%;
+.webProfilePicDiv{
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.webProfilePic{
+    width: 40vw;
+}
+
+.webBottomDiv{
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.webGeneral{
+    font-weight: 200;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+.webOutro{
+    margin-top: 1em;
+}
+
+.webName{
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: -.005em;
 }

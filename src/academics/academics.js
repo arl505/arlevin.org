@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 class Academics extends Component {
     render() {
         return (
-            <div style={{ position:"absolute", "bottom":"0", "left":"0", "right":"0", textAlign:"center"}}>
+            <div style={{width:"100vw", height:"100vh", textAlign:"center", marginTop:"50vh" }}>
             <Button color="danger">Academics</Button>
             </div>
         )

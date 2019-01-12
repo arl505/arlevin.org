@@ -1,21 +1,36 @@
 .backdrop{
-    background-color: #efefef;
+    position: absolute;
+    background-color: #fafafa;
+}
+.NavbarItems:hover{
+    color: #DCDCDC;
+    text-decoration: none;
+
 }
 
-.NavbarItems:hover{
-    color: black;
-    margin: 5px;
-    color: black;
-    text-decoration: none;
-}
 .NavbarItems{
-    color: black;
+    color: white;
     margin: 5px;
-    color: #888888;
     text-decoration: none;
+    font-weight: lighter;
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
+    padding-left: .5em;
+    padding-right: .5em
+
 }
 
 .NavbarBrand, .NavbarBrand:hover{
-    color: black;
+    color: white;
     margin: 5px;
 }  
+
+.webNavBar{
+    width: 100%;
+    position: fixed;
+    top: 0em;
+    display: block;
+    background-color: #4d4b4f;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
