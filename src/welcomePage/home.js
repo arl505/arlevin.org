@@ -31,8 +31,8 @@ class Home extends Component {
 
 
     render() {
-        const { width } = this.state;
         return (
+            <div>
             <div className="content" style={{marginTop:"5.5em"}}>
             <Fade>
                 <div className="webIntro">
@@ -56,6 +56,7 @@ class Home extends Component {
                     </div>
                 </div>
                 </Fade>
+            </div>
             </div>
         )
     }
