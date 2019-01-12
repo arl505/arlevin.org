@@ -56,7 +56,7 @@ class NavBar extends Component {
                     <NavLink to="/about" activeClassName="activeTab" id="aboutTab" className="NavbarItems">About</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink to="/academics" activeClassName="activeTab" activeClassName="activeTab" id="academicsTab" className="NavbarItems">Academics</NavLink>
+                    <NavLink to="/academics" activeClassName="activeTab" id="academicsTab" className="NavbarItems">Academics</NavLink>
                   </NavItem>
 
                   <NavItem>
@@ -88,23 +88,24 @@ class NavBar extends Component {
     else{
       nav = (<BrowserRouter>
         <div id="App">
+        <input type="text" autofocus="autofocus" style={{"display":"none"}} />
         <Menu>
-          <NavItem>
-            <NavLink to="/" id="homeTab" className="NavbarItems" >Home</NavLink>
+          <NavItem className="noBox" tabIndex="-1">
+            <NavLink to="/" exact id="homeTab" className="NavbarItems" activeClassName="activeTab" >Home</NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink to="/about" id="aboutTab" className="NavbarItems">About</NavLink>
+          <NavItem className="noBox" tabIndex="-1">
+            <NavLink to="/about" id="aboutTab" activeClassName="activeTab" className="NavbarItems">About</NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink to="/academics" id="academicsTab" className="NavbarItems">Academics</NavLink>
-          </NavItem>
-
-          <NavItem>
-            <NavLink to="/experience" id="ExperienceTab" className="NavbarItems">Experience</NavLink>
+          <NavItem className="noBox" tabIndex="-1">
+            <NavLink to="/academics" id="academicsTab" className="NavbarItems" activeClassName="activeTab" >Academics</NavLink>
           </NavItem>
 
-          <NavItem>
-            <NavLink to="/contact" id="contactTab" className="NavbarItems">Contact & More</NavLink>
+          <NavItem className="noBox" tabIndex="-1">
+            <NavLink to="/experience" id="ExperienceTab" className="NavbarItems" activeClassName="activeTab" >Experience</NavLink>
+          </NavItem>
+
+          <NavItem className="noBox" tabIndex="-1">
+            <NavLink to="/contact" id="contactTab" className="NavbarItems" activeClassName="activeTab" >Contact & More</NavLink>
           </NavItem>
         </Menu>
   
