@@ -37,24 +37,10 @@
     position: fixed;
     top: 0em;
     display: block;
-    background-color: #404040;
+    background-color: #353942;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
-html,
-body {
-  margin: 0;
-}
-
-#App {
-  font-family: sans-serif;
-}
-
-#page-wrap {
-  text-align: center;
-}
-
 html,
 body {
   margin: 0;
@@ -83,10 +69,10 @@ body {
   color: #d1d1d1;
   transition: color 0.2s;
   margin-top: .5em;
-  margin-bottom: .5em;
   padding-top: .5em;
+  margin-bottom: .5em;
   padding-bottom: .5em;
-
+  font-weight: 600;
 }
 
 /* Change color on hover */
@@ -105,11 +91,6 @@ body {
   top: 19px;
 }
 
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: white;
-}
-
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 24px;
@@ -123,8 +104,8 @@ body {
 
 /* General sidebar styles */
 .bm-menu {
-  background: #404040;
-  padding: 2.5em 1.5em 0;
+  background: #373a47;
+  padding: 2.5em 1.5em;
   font-size: 1.15em;
 }
 
@@ -141,4 +122,13 @@ body {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+
+.bm-burger-bars{
+  background-color: #CCCCCC;
+}
+.bm-burger-button:hover .bm-burger-bars {
+  background-color: white;
+  color: white;
 }

@@ -17,11 +17,20 @@ class NavBar extends Component {
     super(props);
     this.state = {
       width: window.innerWidth,
+      menuOpen: false,
     };
+  }
+
+  handleStateChange (state) {
+    this.setState({menuOpen: state.isOpen})  
   }
   
   componentWillMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  closeMenu () {
+    this.setState({menuOpen: false})
   }
   
   // make sure to remove the listener
@@ -89,23 +98,24 @@ class NavBar extends Component {
       nav = (<BrowserRouter>
         <div id="App">
         <input type="text" autofocus="autofocus" style={{"display":"none"}} />
-        <Menu>
+        <Menu isOpen={this.state.menuOpen}
+          onStateChange={(state) => this.handleStateChange(state)}>
           <NavItem className="noBox" tabIndex="-1">
-            <NavLink to="/" exact id="homeTab" className="NavbarItems" activeClassName="activeTab" >Home</NavLink>
+            <NavLink to="/" exact id="homeTab" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Home</NavLink>
           </NavItem>
           <NavItem className="noBox" tabIndex="-1">
-            <NavLink to="/about" id="aboutTab" activeClassName="activeTab" className="NavbarItems">About</NavLink>
+            <NavLink to="/about" id="aboutTab" activeClassName="activeTab" className="NavbarItems" onClick={() => this.closeMenu()}>About</NavLink>
           </NavItem>
           <NavItem className="noBox" tabIndex="-1">
-            <NavLink to="/academics" id="academicsTab" className="NavbarItems" activeClassName="activeTab" >Academics</NavLink>
-          </NavItem>
-
-          <NavItem className="noBox" tabIndex="-1">
-            <NavLink to="/experience" id="ExperienceTab" className="NavbarItems" activeClassName="activeTab" >Experience</NavLink>
+            <NavLink to="/academics" id="academicsTab" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Academics</NavLink>
           </NavItem>
 
           <NavItem className="noBox" tabIndex="-1">
-            <NavLink to="/contact" id="contactTab" className="NavbarItems" activeClassName="activeTab" >Contact & More</NavLink>
+            <NavLink to="/experience" id="ExperienceTab" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Experience</NavLink>
+          </NavItem>
+
+          <NavItem className="noBox" tabIndex="-1">
+            <NavLink to="/contact" id="contactTab" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Contact & More</NavLink>
           </NavItem>
         </Menu>
   
