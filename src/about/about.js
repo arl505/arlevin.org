@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import ReactDOM from 'react-dom';
-
+import Fade from 'react-reveal/Fade'
 class Academics extends Component {
     render() {
         return (
-            <div style={{ position:"absolute", "bottom":"0", "left":"0", "right":"0", textAlign:"center"}}>
-            <Button color="danger">About</Button>
-            </div>
+            <Fade>
+                <div style={{width:"100vw", height:"100vh", textAlign:"center" }}>
+                <Button color="danger">About</Button>
+                </div>
+            </Fade>
         )
     }
 }

@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import ReactDOM from 'react-dom';
+import Fade from 'react-reveal/Fade';
+
 
 class Contact extends Component {
     render() {
         return (
-            <div style={{ position:"absolute", "bottom":"0", "left":"0", "right":"0", textAlign:"center"}}>
-            <Button color="danger">Contact</Button>
-            </div>
+            <Fade>
+                <div style={{width:"100vw", height:"100vh", textAlign:"center", marginTop:"50vh" }}>
+                <Button color="danger">Contact</Button>
+                </div>
+            </Fade>
         )
     }
 }
