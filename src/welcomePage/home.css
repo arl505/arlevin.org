@@ -1,0 +1,40 @@
+.helloH1{
+    font-weight: 300;
+}
+
+.buildH2{
+    font-weight: 200;
+}
+
+.intro{
+    position: relative;
+    top: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.outro{
+    position: absolute;
+    bottom: .5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: 200;
+}
+
+.general{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-weight: 200;
+}
+
+.profilePicDiv{
+    text-align: center;
+    vertical-align: center;
+    margin-top: 2em;
+}
+
+.profilePic{
+    width: 40%;
+}
