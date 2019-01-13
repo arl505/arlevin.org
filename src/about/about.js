@@ -6,8 +6,10 @@ class About extends Component {
     render() {
         return (
             <Fade>
-                <div style={{width:"100vw", height:"100vh", textAlign:"center", marginTop:"50vh" }}>
-                <Button color="danger">About</Button>
+                <div style={{position:"absolute",width:"100%", height:"100%"}}>
+                    <div style={{ textAlign:"center", marginTop:"50vh" }}>
+                    <Button color="danger">About</Button>
+                    </div>
                 </div>
             </Fade>
         )

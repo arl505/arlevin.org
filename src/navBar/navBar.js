@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Redirect, Switch, NavLink} from "react-router-dom";
+import { BrowserRouter, Route, Switch, NavLink} from "react-router-dom";
 import Home from '../welcomePage/home';	
 import Academics from '../academics/academics';	
 import Experience from '../experience/experience';	
@@ -60,7 +60,6 @@ componentDidMount(){
     this.setState({
       popoverOpen: true
     });
-    isHome = true;
   }
 }
 
@@ -75,7 +74,6 @@ componentDidMount(){
       popoverOpen: false
     });
   }
-
 
   handleStateChange (state) {
     this.setState({menuOpen: state.isOpen})  
@@ -126,8 +124,6 @@ componentDidMount(){
          });
       }
     }
-    console.log(this.state.homeColor);
-
   }
 
   render() {
@@ -139,11 +135,11 @@ componentDidMount(){
         <div className="backdrop" style={{"minHeight":"100vh", width:"100vw", "height":"100"}}>
         <BrowserRouter>
         <div>
-          <div className="NavBar">
-            <Navbar onClick={() => this.closePopover()}>
+          <div className="NavBar" >
+            <Navbar >
                 <NavbarBrand onClick={() => this.closePopover()} className="NavbarBrand" tag={NavLink} to="/" >Alec Levin</NavbarBrand>
                 <Nav>
-              <NavItem>
+              <NavItem onClick={() => this.closePopover()}>
                 <StyledNavLink to="/" id="homeTab" exact inputColor={this.state.homeColor}>Home</StyledNavLink>
               </NavItem>
 
@@ -154,22 +150,22 @@ componentDidMount(){
                   <NavItem onClick={() => this.closePopover()}>
                     <NavLink to="/academics" activeClassName="activeTab" id="academicsTab" className="NavbarItems">Academics</NavLink>
                   </NavItem>
-
+                  
                   <NavItem onClick={() => this.closePopover()}>
                     <NavLink to="/experience" activeClassName="activeTab" id="ExperienceTab" className="NavbarItems">Experience</NavLink>
                   </NavItem>
-
+                  
                   <NavItem>
-                  <Button id="PopoverFocus" style={{padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent"}}>
-                    <NavLink to="/contact" onClick={e => e.preventDefault()}  id="Popover1" className="NavbarItems">Contact</NavLink>
+                  <Button id="PopoverFocus" style={{ padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent"}}>
+                    <NavLink to="/contact" onTouchEnd={e => e.preventDefault()} onClick={e => e.preventDefault()}  id="Popover1" className="NavbarItems">Contact</NavLink>
                     </Button>
                     <Popover style={{textAlign:"center"}} placement="bottom" isOpen={this.state.popoverOpen} target="PopoverFocus" toggle={this.toggle}>
                       <PopoverHeader>Connect with me</PopoverHeader>
                       <PopoverBody>
                       <div style={{textAlign:"center"}}>
-                            <a href="https://github.com/arl505"><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={gitLogo} hoverSrc={gitLogoBlue}/></a>
-                            <a href={"mailto:levin.alec@gmail.com?subject=Let's work together!"}><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={emailLogo} hoverSrc={emailLogoBlue}/></a>
-                            <a href="https://www.linkedin.com/in/alec-levin/"><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={linkedinLogo} hoverSrc={linkedinLogoBlue}/></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/arl505"><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={gitLogo} hoverSrc={gitLogoBlue}/></a>
+                            <a target="_blank" rel="noopener noreferrer" href={"mailto:levin.alec@gmail.com?subject=Let's work together!"}><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={emailLogo} hoverSrc={emailLogoBlue}/></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alec-levin/"><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={linkedinLogo} hoverSrc={linkedinLogoBlue}/></a>
                         </div>
                       </PopoverBody>
                     </Popover>
@@ -245,8 +241,6 @@ componentDidMount(){
       )
   }
 }
-
-var isHome = false;
 
 ReactDOM.render(
   <NavBar />,

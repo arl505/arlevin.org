@@ -32,7 +32,7 @@
 }  
 
 .NavBar{
-    z-index:99;
+    z-index:20;
     width: 100%;
     position: fixed;
     top: 0em;
