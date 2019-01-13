@@ -75,6 +75,12 @@ componentDidMount(){
     });
   }
 
+  openPopover() {
+    this.setState({
+      popoverOpen: true
+    });
+  }
+
   handleStateChange (state) {
     this.setState({menuOpen: state.isOpen})  
   }
@@ -96,6 +102,14 @@ componentDidMount(){
   
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth });
+    if(window.innerWidth < 652){
+      this.closePopover();
+    }
+    else{
+      if(window.location.href.includes("contact")){
+        this.openPopover();
+      }
+    }
   };
 
   componentDidUpdate(){
@@ -155,8 +169,8 @@ componentDidMount(){
                     <NavLink to="/experience" activeClassName="activeTab" id="ExperienceTab" className="NavbarItems">Experience</NavLink>
                   </NavItem>
                   
-                  <NavItem>
-                  <Button id="PopoverFocus" style={{ padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent"}}>
+                  <NavItem id="PopoverFocus">
+                  <Button style={{ padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent"}}>
                     <NavLink to="/contact" onTouchEnd={e => e.preventDefault()} onClick={e => e.preventDefault()}  id="Popover1" className="NavbarItems">Contact</NavLink>
                     </Button>
                     <Popover style={{textAlign:"center"}} placement="bottom" isOpen={this.state.popoverOpen} target="PopoverFocus" toggle={this.toggle}>
