@@ -7,7 +7,7 @@ import Contact from '../contact/contact';
 import About from '../about/about';	
 import "../App.css"
 import ReactDOM from 'react-dom';
-import {Navbar, NavbarBrand, Nav, NavItem} from 'reactstrap';
+import {Navbar, Button, NavbarBrand, Nav, NavItem, Popover, PopoverBody, PopoverHeader} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import { slide as Menu } from "react-burger-menu";
 
@@ -15,11 +15,21 @@ class NavBar extends Component {
 
   constructor(props) {
     super(props);
+
+    this.toggle = this.toggle.bind(this);
     this.state = {
       width: window.innerWidth,
-      menuOpen: false,
+
+      popoverOpen: false
     };
   }
+
+  toggle() {
+    this.setState({
+      popoverOpen: !this.state.popoverOpen
+    });
+  }
+
 
   handleStateChange (state) {
     this.setState({menuOpen: state.isOpen})  
@@ -73,10 +83,20 @@ class NavBar extends Component {
                   </NavItem>
 
                   <NavItem>
-                    <NavLink to="/contact" activeClassName="activeTab" id="contactTab" className="NavbarItems">Contact & More</NavLink>
+                  <Button id="PopoverFocus" style={{padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent"}}>
+                    <NavLink to="/contact" onClick={e => e.preventDefault()} activeClassName="activeTab" id="Popover1" className="NavbarItems">Contact & More</NavLink>
+                    </Button>
+                    <Popover trigger="focus" placement="bottom" isOpen={this.state.popoverOpen} target="PopoverFocus" toggle={this.toggle}>
+                      <PopoverHeader>Popover Title</PopoverHeader>
+                      <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
+                    </Popover>
+
                   </NavItem>
                 </Nav>
             </Navbar>
+
+          
+
             </div>
           
           <div>
@@ -84,7 +104,7 @@ class NavBar extends Component {
             <Route path="/about" component={About}/>
             <Route path="/academics" component={Academics}/>
             <Route path="/experience" component={Experience}/>
-            <Route path="/contact" component={Contact}/>
+            {/*<Route path="/contact" component={Contact}/>*/}
             <Route path="/"  component={Home}/> {/* this line comes last and will be the default (or no matches)*/}
           </Switch>
           </div>
@@ -115,7 +135,7 @@ class NavBar extends Component {
           </NavItem>
 
           <NavItem className="noBox" tabIndex="-1">
-            <NavLink to="/contact" id="contactTab" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Contact & More</NavLink>
+            <NavLink to="/contact" id="contactTab" className="NavbarItems" disabled="disabled" activeClassName="activeTab" onClick={() => this.closeMenu()}>Contact</NavLink>
           </NavItem>
         </Menu>
   
@@ -152,3 +172,10 @@ ReactDOM.render(
 );
 
 export default NavBar;
+
+
+/*
+                <NavItem>
+                    <NavLink to="/contact" activeClassName="activeTab" id="Popover1" className="NavbarItems">Contact & More</NavLink>
+                  </NavItem>
+*/

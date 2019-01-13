@@ -50,6 +50,7 @@ body {
   font-family: sans-serif;
 
   /* Give app full page to work with */
+  width: 100vw;
   height: 100vh;
 }
 
@@ -107,6 +108,7 @@ body {
   background: #373a47;
   padding: 2.5em 1.5em;
   font-size: 1.15em;
+  overflow-y: hidden !important; 
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -123,7 +125,6 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-
 
 .bm-burger-bars{
   background-color: #CCCCCC;

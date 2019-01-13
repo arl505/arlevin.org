@@ -7,11 +7,21 @@ import logo from "./me.jpg"
 import Fade from 'react-reveal/Fade';
 
 class Home extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+    
+        this.toggle = this.toggle.bind(this);
         this.state = {
-          width: window.innerWidth,
+            width: window.innerWidth,
+
+          popoverOpen: false
         };
+      }
+    
+      toggle() {
+        this.setState({
+          popoverOpen: !this.state.popoverOpen
+        });
       }
       
       componentWillMount() {
