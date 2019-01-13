@@ -211,7 +211,7 @@ componentDidMount(){
         <input type="text" autoFocus="autofocus" style={{"display":"none"}} />
         <Menu isOpen={this.state.menuOpen}
           onStateChange={(state) => this.handleStateChange(state)}>
-          <NavItem className="noBox" tabIndex="-1">
+         <NavItem className="noBox" tabIndex="-1">
             <NavLink to="/" exact id="homeTab" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Home</NavLink>
           </NavItem>
           <NavItem className="noBox" tabIndex="-1">
