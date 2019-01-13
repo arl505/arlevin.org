@@ -170,7 +170,7 @@ componentDidMount(){
                   </NavItem>
                   
                   <NavItem id="PopoverFocus">
-                  <Button style={{ padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent"}}>
+                  <Button style={{ padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent", verticalAlign:"baseline"}}>
                     <NavLink to="/contact" onTouchEnd={e => e.preventDefault()} onClick={e => e.preventDefault()}  id="Popover1" className="NavbarItems">Contact</NavLink>
                     </Button>
                     <Popover style={{textAlign:"center"}} placement="bottom" isOpen={this.state.popoverOpen} target="PopoverFocus" toggle={this.toggle}>

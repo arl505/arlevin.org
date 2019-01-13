@@ -26,6 +26,7 @@ class Home extends Component {
       
       componentWillMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
+        console.log(window.innerWidth);
       }
       
       // make sure to remove the listener
@@ -41,6 +42,14 @@ class Home extends Component {
 
 
     render() {
+        var centerText;
+        if(840 > window.innerWidth){
+            centerText = false;
+        }
+        else{
+            centerText = true;
+        }
+
         return (
             <div>
             <div className="content" style={{marginTop:"5.5em"}}>
@@ -49,10 +58,9 @@ class Home extends Component {
                     <h1 className="webHelloH1">Hello World!</h1>
                     <h2 className="webBuildH2">Let's build something great</h2>
                 </div>
-
-
+                
                 <div className="align_and_space">
-                    <Media className="rounded-circle webProfilePic" object src={logo} alt="profile" style={{width:"40vw"}}/>
+                    <Media className="rounded-circle webProfilePic" object src={logo} alt="profile" style={{maxWidth:"40vw", maxHeight:"54vh"}}/>
                 </div>
                 
                 <div className="align_and_space">
@@ -62,7 +70,9 @@ class Home extends Component {
                     </div>
 
                     <div>
-                        <h4 className="webGeneral webOutro" style={{marginTop:"1em"}}>I am a passionate developer whose areas of interest span from progressive web and mobile application development to scientific computing of high-frequency data.</h4>
+                        {centerText
+                        ?<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"center", marginBottom:"1em"}}>I am a passionate developer whose areas of interest span from progressive web and mobile application development to scientific computing of high-frequency data.</h4>
+                        :<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"left", marginBottom:"1em"}}>I am a passionate developer whose areas of interest span from progressive web and mobile application development to scientific computing of high-frequency data.</h4>}
                     </div>
                 </div>
                 </Fade>
