@@ -2,8 +2,15 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import ReactDOM from 'react-dom';
 import Fade from 'react-reveal/Fade'
+import ReactGA from 'react-ga';
+
 
 class Academics extends Component {
+
+    componentDidMount(){
+        initializeReactGA();
+      }
+
     render() {
         return (
             <Fade>
@@ -16,6 +23,12 @@ class Academics extends Component {
         )
     }
 }
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-132341230-1');
+    ReactGA.pageview('/academics');
+  }
+
 ReactDOM.render(
     <Academics />,
     document.getElementById('root')

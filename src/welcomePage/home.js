@@ -5,6 +5,7 @@ import { Media } from 'reactstrap';
 import ReactDOM from 'react-dom';
 import logo from "./me.jpg"
 import Fade from 'react-reveal/Fade';
+import ReactGA from 'react-ga';
 
 class Home extends Component {
     constructor(props) {
@@ -18,6 +19,10 @@ class Home extends Component {
         };
       }
     
+      componentDidMount(){
+        initializeReactGA();
+      }
+
       toggle() {
         this.setState({
           popoverOpen: !this.state.popoverOpen
@@ -81,6 +86,11 @@ class Home extends Component {
         )
     }
 }
+function initializeReactGA() {
+    ReactGA.initialize('UA-132341230-1');
+    ReactGA.pageview('/');
+  }
+
 ReactDOM.render(
     <Home />,
     document.getElementById('root')

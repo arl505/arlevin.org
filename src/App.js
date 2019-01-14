@@ -3,9 +3,7 @@ import "./App.css"
 import ReactDOM from 'react-dom';
 import NavBar from  "./navBar/navBar"
 
-
 class App extends Component {
-  
   render() {
       return (
         <div>

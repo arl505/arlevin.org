@@ -1,3 +1,5 @@
+* {-webkit-font-smoothing: antialiased;}
+
 .backdrop{
     position: absolute;
     background-color: #fafafa;

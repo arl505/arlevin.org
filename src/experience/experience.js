@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Button } from 'reactstrap';
 import Fade from 'react-reveal/Fade';
+import ReactGA from 'react-ga';
 
 class Experience extends Component {
+
+    componentDidMount(){
+        initializeReactGA();
+      }
 
     render() {
         return (
@@ -17,6 +22,12 @@ class Experience extends Component {
         )
     }
 }
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-132341230-1');
+    ReactGA.pageview('/experience');
+  }
+
 ReactDOM.render(
     <Experience />,
     document.getElementById('root')
