@@ -7,13 +7,16 @@ import ReactGA from 'react-ga';
 
 class Academics extends Component {
 
-    componentDidMount(){
-        initializeReactGA();
+    componentWillUpdate(){
+        var url = window.location.href;
+        if(url.includes("academics")){
+            initializeReactGA();
+        }
       }
 
     render() {
         return (
-            <Fade>
+           <Fade>
                 <div style={{position:"absolute",width:"100%", height:"100%"}}>
                     <div style={{ textAlign:"center", marginTop:"50vh" }}>
                     <Button color="danger">Academics</Button>

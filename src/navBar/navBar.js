@@ -149,10 +149,11 @@ componentDidMount(){
     const isMobile = width <= 651;
     let nav;
     if(!isMobile){
-      nav = (<Fade>
+      nav = (
         <div className="backdrop" style={{"minHeight":"100vh", width:"100vw", "height":"100"}}>
         <BrowserRouter>
         <div>
+          <Fade>
           <div className="NavBar" >
             <Navbar >
                 <NavbarBrand onClick={() => this.closePopover()} className="NavbarBrand" tag={NavLink} to="/" >Alec Levin</NavbarBrand>
@@ -192,8 +193,9 @@ componentDidMount(){
                 </Nav>
             </Navbar>
             </div>
-          
+          </Fade>
           <div onClick={() => this.closePopover()}>
+          
           <Switch>
            {/* <Redirect from='/contact' to='/'/> */}
             <Route path="/contact" component={Home}/>
@@ -206,7 +208,7 @@ componentDidMount(){
           </div>
       </BrowserRouter>
       </div>
-      </Fade>);
+      );
     }
    
     else{

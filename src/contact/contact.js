@@ -8,12 +8,20 @@ import emailLogoBlue from "./email-logo-blue.png";
 import linkedinLogo from "./linkedin-logo.png";
 import linkedinLogoBlue from "./linkedin-logo-blue.png";
 import HoverImage from "react-hover-image";
+import ReactGA from 'react-ga';
 
 class Contact extends Component {
 
+    componentWillUpdate(){
+        var url = window.location.href;
+        if(url.includes("contact")){
+            initializeReactGA();
+        }
+      }
+
     render() {
         return (
-            <Fade>
+           <Fade>
                 <div style={{marginTop:"0"}}>
                     <h1 style={{textAlign:"center", fontWeight:"100", marginTop:"35vh"}}>Let's work together</h1>
                     <div>
@@ -25,10 +33,15 @@ class Contact extends Component {
                         </div>
                     </div>
                 </div>
-            </Fade>
+           </Fade>
         )
     }
 }
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-132341230-1');
+    ReactGA.pageview('/contact');
+  }
 
 ReactDOM.render(
     <Contact />,

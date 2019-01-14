@@ -7,8 +7,11 @@ import ReactGA from 'react-ga';
 
 class About extends Component {
 
-    componentDidMount(){
-        initializeReactGA();
+    componentWillUpdate(){
+        var url = window.location.href;
+        if(url.includes("about")){
+            initializeReactGA();
+        }
       }
 
     render() {

@@ -6,8 +6,11 @@ import ReactGA from 'react-ga';
 
 class Experience extends Component {
 
-    componentDidMount(){
-        initializeReactGA();
+    componentWillUpdate(){
+        var url = window.location.href;
+        if(url.includes("experience")){
+            initializeReactGA();
+        }
       }
 
     render() {
@@ -18,7 +21,7 @@ class Experience extends Component {
                     <Button color="danger">Experience</Button>
                     </div>
                 </div>
-            </Fade>
+           </Fade>
         )
     }
 }

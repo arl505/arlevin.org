@@ -19,8 +19,11 @@ class Home extends Component {
         };
       }
     
-      componentDidMount(){
-        initializeReactGA();
+      componentWillUpdate(){
+        var url = window.location.href;
+        if(url === "https://arlevin.org/"){
+            initializeReactGA();
+        }
       }
 
       toggle() {
@@ -31,7 +34,6 @@ class Home extends Component {
       
       componentWillMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
-        console.log(window.innerWidth);
       }
       
       // make sure to remove the listener
@@ -56,9 +58,9 @@ class Home extends Component {
         }
 
         return (
+            <Fade>
             <div>
             <div className="content" style={{marginTop:"5.5em"}}>
-            <Fade>
                 <div className="webIntro">
                     <h1 className="webHelloH1">Hello World!</h1>
                     <h2 className="webBuildH2">Let's build something great</h2>
@@ -80,9 +82,9 @@ class Home extends Component {
                         :<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"left", marginBottom:"1em"}}>I am a passionate developer whose areas of interest span from progressive web and mobile application development to scientific computing of high-frequency data.</h4>}
                     </div>
                 </div>
-                </Fade>
             </div>
             </div>
+            </Fade>
         )
     }
 }
