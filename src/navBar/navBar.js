@@ -29,9 +29,9 @@ const StyledNavLink = styled(MyNavLink)`
     color: ${props => props.inputColor || "#B8B8B8"};
     margin: 5px;
     text-decoration: none;
-    font-weight: lighter;
-    padding-bottom: 1.25em;
-    padding-top: 1.25em;
+    font-weight: 300;
+    padding-bottom: 1.4em;
+    padding-top: 1.4em;
     padding-left: .5em;
     padding-right: .5em
     &:hover {
@@ -156,8 +156,9 @@ componentDidMount(){
           <Fade>
           <div className="NavBar" >
             <Navbar >
-                <NavbarBrand onClick={() => this.closePopover()} className="NavbarBrand" tag={NavLink} to="/" >Alec Levin</NavbarBrand>
+                <NavbarBrand onClick={() => this.closePopover()} className="NavbarBrand" tag={NavLink} to="/">Alec Levin</NavbarBrand>
                 <Nav>
+                  
               <NavItem onClick={() => this.closePopover()}>
                 <StyledNavLink to="/" id="homeTab" exact inputColor={this.state.homeColor}>Home</StyledNavLink>
               </NavItem>
