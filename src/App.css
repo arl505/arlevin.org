@@ -12,9 +12,21 @@
     margin: 5px;
     text-decoration: none;
     font-weight: lighter;
-    font-weight: 300;
-    padding-top: 1.4em;
-    padding-bottom: 1.4em;
+    font-weight: 400; 
+}
+
+.NavbarItemsWithPadding:hover{
+  color: #E8E8E8;
+  text-decoration: none;
+}
+.NavbarItemsWithPadding{
+  padding-top:1.5314em;
+  padding-bottom: 1.5314em;
+  color: #B8B8B8;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: lighter;
+  font-weight: 400; 
 }
 
 .noBox:visited, .noBox:active, .noBox:focus, .noBox:hover{

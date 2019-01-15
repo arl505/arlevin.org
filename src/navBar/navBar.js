@@ -30,8 +30,8 @@ const StyledNavLink = styled(MyNavLink)`
     margin: 5px;
     text-decoration: none;
     font-weight: 300;
-    padding-bottom: 1.4em;
-    padding-top: 1.4em;
+    padding-bottom: 1.5314em;
+    padding-top: 1.5314em;
     padding-left: .5em;
     padding-right: .5em
     &:hover {
@@ -164,20 +164,20 @@ componentDidMount(){
               </NavItem>
 
                   <NavItem onClick={() => this.closePopover()}>
-                    <NavLink to="/about" activeClassName="activeTab" id="aboutTab" className="NavbarItems">About</NavLink>
+                    <NavLink to="/about" activeClassName="activeTab" id="aboutTab" className="NavbarItemsWithPadding">About</NavLink>
                   </NavItem>
 
                   <NavItem onClick={() => this.closePopover()}>
-                    <NavLink to="/academics" activeClassName="activeTab" id="academicsTab" className="NavbarItems">Academics</NavLink>
+                    <NavLink to="/academics" activeClassName="activeTab" id="academicsTab" className="NavbarItemsWithPadding">Academics</NavLink>
                   </NavItem>
                   
                   <NavItem onClick={() => this.closePopover()}>
-                    <NavLink to="/experience" activeClassName="activeTab" id="ExperienceTab" className="NavbarItems">Experience</NavLink>
+                    <NavLink to="/experience" activeClassName="activeTab" id="ExperienceTab" className="NavbarItemsWithPadding">Experience</NavLink>
                   </NavItem>
                   
                   <NavItem id="PopoverFocus">
                   <Button style={{ padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent", verticalAlign:"baseline"}}>
-                    <NavLink to="/contact" onTouchEnd={e => e.preventDefault()} onClick={e => {e.preventDefault(); initializeReactGA()}}  id="Popover1" className="NavbarItems">Contact</NavLink>
+                    <NavLink to="/contact" onTouchEnd={e => e.preventDefault()} onClick={e => {e.preventDefault(); initializeReactGA()}}  id="Popover1" className="NavbarItemsWithPadding">Contact</NavLink>
                     </Button>
                     <Popover style={{textAlign:"center"}} placement="bottom" isOpen={this.state.popoverOpen} target="PopoverFocus" toggle={this.toggle}>
                       <PopoverHeader>Connect with me</PopoverHeader>
