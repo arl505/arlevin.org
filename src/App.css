@@ -52,6 +52,7 @@ body {
   /* Give app full page to work with */
   width: 100vw;
   height: 100vh;
+  background-color: #fafafa;
 }
 
 #page-wrap {
