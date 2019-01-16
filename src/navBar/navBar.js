@@ -53,6 +53,8 @@ const StyledBottomDiv = styled(MyBottomDiv)`
  height: auto;
  width: 100vw;
  background-color: #353942;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
 
  @media (max-width: 652px){
   height: auto;
@@ -314,7 +316,7 @@ componentDidMount(){
         <MobileView>
           <StyledBottomDivPhantom displayHeight="15vh" inputDisplay={this.state.showBottomDiv}/>
           <StyledBottomDiv inputDisplay={this.state.showBottomDiv}>
-          <Media object src={xSymbol} onClick={() => this.closeBottomDiv()} alt="x-logo" style={{height:"15px", width:"15px", position:"absolute", top:".5vh", right:"3vw"}}/>
+          <Media object src={xSymbol} onClick={() => this.closeBottomDiv()} alt="x-logo" style={{height:"15px", width:"15px", position:"absolute", top:".9vh", right:"3vw"}}/>
 
             <p style={{textAlign:"center", color:"white", margin:"0em", fontSize:"80%", marginTop:"1vh"}}>
               Add this site to your home screen.
