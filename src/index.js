@@ -7,14 +7,8 @@ import {isMobile as trueIsMobile} from 'react-device-detect';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-// tbh idk what the code below does or what the corresponding  
-// serviceWorker.js file do, but I'm going to leave them, don't ask why
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
 if(trueIsMobile){
-    serviceWorker.register();
+    serviceWorker.unregister();
 }
 else{
     serviceWorker.unregister();

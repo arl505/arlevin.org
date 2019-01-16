@@ -11,12 +11,12 @@ import {Navbar, Media, Button, NavbarBrand, Nav, NavItem, Popover, PopoverBody, 
 import Fade from 'react-reveal/Fade';
 import { slide as Menu } from "react-burger-menu";
 import HoverImage from "react-hover-image";
-import gitLogo from "./github-logo.png";
-import gitLogoBlue from "./github-logo-blue.png";
-import emailLogo from "./email-logo.png";
-import emailLogoBlue from "./email-logo-blue.png";
-import linkedinLogo from "./linkedin-logo.png";
-import linkedinLogoBlue from "./linkedin-logo-blue.png";
+import gitLogo from "../contact/github-logo.png";
+import gitLogoBlue from "../contact/github-logo-blue.png";
+import emailLogo from "../contact/email-logo.png";
+import emailLogoBlue from "../contact/email-logo-blue.png";
+import linkedinLogo from "../contact/linkedin-logo.png";
+import linkedinLogoBlue from "../contact/linkedin-logo-blue.png";
 import styled from 'styled-components'
 import ReactGA, { ga } from 'react-ga';
 import { MobileView, isMobile as trueIsMobile} from 'react-device-detect';
