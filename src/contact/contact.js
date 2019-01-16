@@ -28,7 +28,7 @@ class Contact extends Component {
                         <h3 className="connectString" style={{textAlign:"center"}}>Connect with me</h3>
                         <div style={{textAlign:"center"}}>
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/arl505"><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={gitLogo} hoverSrc={gitLogoBlue}/></a>
-                            <a target="_blank" rel="noopener noreferrer" href={"mailto:levin.alec@gmail.com?subject=Let's work together!"}><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={emailLogo} hoverSrc={emailLogoBlue}/></a>
+                            <a href={"mailto:alec@arlevin.org?subject=Let's work together!"}><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={emailLogo} hoverSrc={emailLogoBlue}/></a>
                             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alec-levin/"><HoverImage className="logo" style={{width:"40px", height:"40xp", margin:"1em"}} src={linkedinLogo} hoverSrc={linkedinLogoBlue}/></a>
                         </div>
                     </div>
