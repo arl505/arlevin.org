@@ -34,7 +34,9 @@ class Academics extends Component {
                                 LumberHacks Hackathon
                                 <ul className="myList">
                                     <li className="myList">
-                                        <strong>March 2018:</strong> worked as a member of a 4 person team to design and build a web application that took second place out of 50+ competitors. The project was a prototype for a non-profit organization that sought to connect the 1200 non-profits of Humboldt county with eager volunteers looking for opportunities. The application included scheduling abilities and allowed non-profits to market themselves and was built with Oracle SQL*Plus, PHP, HTML, and CSS.
+                                        <strong>March 2018:</strong> worked as a member of a 4 person team to design and build a web application that took second place out of 50+ competitors. 
+                                        The project was a prototype for a non-profit organization that sought to connect the 1200 non-profits of Humboldt county with eager volunteers looking for opportunities. 
+                                        The application included scheduling abilities, allowed non-profits to market themselves, and was built with Oracle SQL*Plus, PHP, HTML, and CSS.
                                     </li>
                                 </ul>
                             </li>

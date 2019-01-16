@@ -6,3 +6,12 @@ padding:0em;
 text-align: left;
 margin-bottom: 1em;
 }
+
+.myListWithBullets{
+    list-style-type: disc;
+    margin-left: 3vw;
+    margin-right:3vw;
+    padding:0em;
+    text-align: left;
+    }
+    
