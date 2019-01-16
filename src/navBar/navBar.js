@@ -7,7 +7,7 @@ import Contact from '../contact/contact';
 import About from '../about/about';	
 import "../App.css"
 import ReactDOM from 'react-dom';
-import {Navbar, Button, NavbarBrand, Nav, NavItem, Popover, PopoverBody, PopoverHeader} from 'reactstrap';
+import {Navbar, Media, Button, NavbarBrand, Nav, NavItem, Popover, PopoverBody, PopoverHeader} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import { slide as Menu } from "react-burger-menu";
 import HoverImage from "react-hover-image";
@@ -19,6 +19,8 @@ import linkedinLogo from "./linkedin-logo.png";
 import linkedinLogoBlue from "./linkedin-logo-blue.png";
 import styled from 'styled-components'
 import ReactGA, { ga } from 'react-ga';
+import { MobileView, isMobile as trueIsMobile} from 'react-device-detect';
+import xSymbol from "./x-symbol.png"
 
 const MyNavLink = ({className, children}) => (
   <NavLink to="/" className={className}> {children}</NavLink>
@@ -40,17 +42,57 @@ const StyledNavLink = styled(MyNavLink)`
     }
 `;
 
+const MyBottomDiv = ({className, children}) => (
+  <div className={className}>{children}</div>
+);
+
+const StyledBottomDiv = styled(MyBottomDiv)`
+ display: ${props => props.inputDisplay || "none"}; 
+ position: fixed;
+ bottom: 0;
+ height: auto;
+ width: 100vw;
+ background-color: #353942;
+
+ @media (max-width: 652px){
+  height: auto;
+ }
+`;
+
+const StyledBottomDivPhantom = styled(MyBottomDiv)`
+ display: ${props => props.inputDisplay || "none"}; 
+ height: ${props => props.displayHeight || "10vh"};
+ width: 100vw;
+`;
+
 class NavBar extends Component { 
 
   constructor(props) {
     super(props);
 
+    var blockOrNone;
+
+    if(trueIsMobile){
+      blockOrNone = "block";
+    }
+    else{
+      blockOrNone = "none";
+    }
+
     this.toggle = this.toggle.bind(this);
+
       this.state = {
         width: window.innerWidth,
         popoverOpen: false,
-        homeColor: "#B8B8B8"
+        homeColor: "#B8B8B8",
+        showBottomDiv: blockOrNone,
        }
+  }
+
+  closeBottomDiv(){
+    this.setState({
+      showBottomDiv: !this.state.showBottomDiv
+    });
   }
 
 
@@ -206,6 +248,23 @@ componentDidMount(){
             <Route path="/" component={Home}/> {/* this line comes last and will be the default (or no matches)*/}
           </Switch>
           </div>
+          <MobileView>
+         
+         <StyledBottomDivPhantom displayHeight="10vh" inputDisplay={this.state.showBottomDiv}/>
+                   <StyledBottomDiv inputDisplay={this.state.showBottomDiv}>
+          <Media object src={xSymbol} onClick={() => this.closeBottomDiv()} alt="x-logo" style={{height:"15px", width:"15px", position:"absolute", top:"1vh", right:"5vw"}}/>
+
+            <p style={{textAlign:"center", color:"white", margin:"0em", fontSize:"80%", marginTop:"1vh"}}>
+              Add this site to your home screen.
+            </p>
+
+            <p style={{textAlign:"center", color:"white", fontSize:"80%"}}>
+              This is a Progressive Web App, meaning that once installed, it will run offline.
+            </p>
+
+
+          </StyledBottomDiv>
+        </MobileView>
           </div>
       </BrowserRouter>
       </div>
@@ -251,6 +310,23 @@ componentDidMount(){
             <Route path="/" component={Home} /> {/* this line comes last and will be the default (or no matches)*/}
           </Switch>
         </div>
+        
+        <MobileView>
+          <StyledBottomDivPhantom displayHeight="15vh" inputDisplay={this.state.showBottomDiv}/>
+          <StyledBottomDiv inputDisplay={this.state.showBottomDiv}>
+          <Media object src={xSymbol} onClick={() => this.closeBottomDiv()} alt="x-logo" style={{height:"15px", width:"15px", position:"absolute", top:".5vh", right:"3vw"}}/>
+
+            <p style={{textAlign:"center", color:"white", margin:"0em", fontSize:"80%", marginTop:"1vh"}}>
+              Add this site to your home screen.
+            </p>
+
+            <p style={{textAlign:"center", color:"white", fontSize:"80%"}}>
+              This is a Progressive Web App, meaning that once installed, it will run offline.
+            </p>
+
+
+          </StyledBottomDiv>
+        </MobileView>
       </div>
       </BrowserRouter>);
     }

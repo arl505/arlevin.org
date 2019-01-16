@@ -27,21 +27,7 @@ class About extends Component {
             initializeReactGA();
         }
       }
-      /*
-      componentWillMount() {
-        window.addEventListener('resize', this.handleWindowSizeChange);
-      }
-      
-      // make sure to remove the listener
-      // when the component is not mounted anymore
-      componentWillUnmount() {
-        window.removeEventListener('resize', this.handleWindowSizeChange);
-      }
-      
-      handleWindowSizeChange = () => {
-        this.setState({ width: window.innerWidth });
-      };
-*/
+
     render() {
         var mobile;
         if(768 > window.innerWidth){
@@ -57,7 +43,7 @@ class About extends Component {
                           <Media object src={Project_collage} alt="projects" style={{maxWidth:"98vw", maxHeight:"40vh"}}/>
                         </div>
                         <div className="aboutBody">
-                            <h1 style={{textAlign:"center"}}>Reliable. Responsive. <strong>Innovative.</strong></h1>
+                            <h1 style={{textAlign:"center"}}>Reliable. Responsive. <strong>Revolutionary.</strong></h1>
                             <p style={{textAlign:"left"}}>As the president of the Gender and Sexuality Alliance in my senior year of high school, I was lucky enough to be offered a position at the highly esteemed Lawrence Berkeley National Labs, or Berkeley Labs. At Berkeley Labs I worked for as a Computing Sciences Summer Student Researcher within the Integrated Date Frameworks group of the Data Science and Technology Department of the Computational Research Division. There, I used the Python scientific computing library, SciPy, and specifically the NumPy and Matplotlib packages to construct advanced visualizations of high frequency weather data in order to perform quality assurance and correction of the data. 
 </p>
 {mobile &&
@@ -79,7 +65,7 @@ class About extends Component {
                             {mobile
                             ?(<p style={{textAlign:"left"}}>In school I learned the fundamentals of programming with C++, and tackled software engineering of both web and mobile applications, and got to experiment with advanced topics such as data mining and React.js. Two events in my university years have had major affects on me as a developer.</p>
                             )
-                            :(<p>In school I learned the fundamentals of programming with C++, and tackled software engineering of both web and mobile applications, and got to experiment with advanced topics such as data mining and React.js. Two events in my university years have had major affects on me as a developer. First, taking a mobile applications course geared towards Android–and then teaching the course with Codepath.org–left me with a passion for mobile app development. Secondly, taking on a real world non-profit startup client and working as a web engineer with the most modern technologies left me excited about to explore further possibilities. The web app was build with a MERN stack, or a MongoDB, Express.js, React.js, and Node.js stack. All of this history culminates in my extreme hunger to develop well made, reliable applications that people, such as the scientists at Berkeley Labs, can depend on.</p>)}
+                            :(<p>In school I learned the fundamentals of programming with C++, and tackled software engineering of both web and mobile applications, and got to experiment with advanced topics such as data mining and React.js. Two events in my university years have had major affects on me as a developer. First, taking a mobile applications course geared towards Android–and then teaching the course with Codepath.org–left me with a passion for mobile app development. Secondly, taking on a real world non-profit startup client and working as a web engineer with the most modern technologies left me excited about to explore further possibilities. The web app was build with a MERN stack, or a MongoDB, Express.js, React.js, and Node.js stack. All of this history culminates in my extreme hunger to develop reliable, responsive, and revolutionary applications that users, such as the scientists at Berkeley Labs, can depend on.</p>)}
                 
                   
                         <div style={{textAlign:"center", marginBottom:"1em", marginTop:"2em"}}>
@@ -87,7 +73,7 @@ class About extends Component {
                                 <Media object src={Android} alt="Android Logo" style={{display:"inline", maxWidth:"40vw", maxHeight:"45vh"}}/>
                             </div>
                             {mobile &&
-                            (<p style={{textAlign:"left"}}>First, taking a mobile applications course geared towards Android–and then teaching the course with Codepath.org–left me with a passion for mobile app development. Secondly, taking on a real world non-profit startup client and working as a web engineer with the most modern technologies left me excited about to explore further possibilities. The web app was build with a MERN stack, or a MongoDB, Express.js, React.js, and Node.js stack. All of this history culminates in my extreme hunger to develop well made, reliable applications that people, such as the scientists at Berkeley Labs, can depend on.</p>
+                            (<p style={{textAlign:"left"}}>First, taking a mobile applications course geared towards Android–and then teaching the course with Codepath.org–left me with a passion for mobile app development. Secondly, taking on a real world non-profit startup client and working as a web engineer with the most modern technologies left me excited about to explore further possibilities. The web app was build with a MERN stack, or a MongoDB, Express.js, React.js, and Node.js stack. All of this history culminates in my extreme hunger to develop reliable, responsive, and revolutionary applications that users, such as the scientists at Berkeley Labs, can depend on.</p>
                             )}
                         </div>
                     </div>
