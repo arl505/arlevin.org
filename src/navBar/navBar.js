@@ -218,6 +218,10 @@ componentDidMount(){
                   <NavItem onClick={() => this.closePopover()}>
                     <NavLink to="/experience" activeClassName="activeTab" id="ExperienceTab" className="NavbarItemsWithPadding">Experience</NavLink>
                   </NavItem>
+
+                                    <NavItem onClick={() => this.closePopover()}>
+                    <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" id="ExperienceTab" className="NavbarItemsWithPadding">Download</a>
+                  </NavItem>
                   
                   <NavItem id="PopoverFocus">
                   <Button style={{ padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent", verticalAlign:"baseline"}}>
@@ -233,8 +237,8 @@ componentDidMount(){
                         </div>
                       </PopoverBody>
                     </Popover>
-
                   </NavItem>
+
                 </Nav>
             </Navbar>
             </div>
@@ -290,7 +294,11 @@ componentDidMount(){
           </NavItem>
 
           <NavItem className="noBox" tabIndex="-1">
-            <NavLink to="/experience" id="ExperienceTab" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Experience</NavLink>
+            <NavLink to="/experience" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Experience</NavLink>
+          </NavItem>
+
+          <NavItem className="noBox" tabIndex="-1">
+            <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" className="NavbarItems">Download</a>
           </NavItem>
 
           <NavItem className="noBox" tabIndex="-1">
