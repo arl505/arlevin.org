@@ -220,7 +220,7 @@ componentDidMount(){
                   </NavItem>
 
                                     <NavItem onClick={() => this.closePopover()}>
-                    <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" id="ExperienceTab" className="NavbarItemsWithPadding">Download</a>
+                    <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" id="ExperienceTab" className="NavbarItemsWithPadding">Résumé</a>
                   </NavItem>
                   
                   <NavItem id="PopoverFocus">
@@ -298,7 +298,7 @@ componentDidMount(){
           </NavItem>
 
           <NavItem className="noBox" tabIndex="-1">
-            <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" className="NavbarItems">Download</a>
+            <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" className="NavbarItems">Résumé</a>
           </NavItem>
 
           <NavItem className="noBox" tabIndex="-1">
