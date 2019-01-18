@@ -55,9 +55,14 @@ class About extends Component {
     <Media object src={Humboldt} alt="Humboldt State" style={{display:"inline", width:"40vw"}}/>
 </div>)}
                             {mobile
-                            ?(<p style={{textAlign:"left"}}>In school I learned the fundamentals of programming with C++, tackled software engineering of both web and mobile applications, and got to experiment with advanced topics such as data mining and React.js. Two events in my university years have had major affects on me as a developer.</p>
+                            ?(<p style={{textAlign:"left"}}>In school, I learned the fundamentals of programming with C++, tackled software engineering of both web and mobile applications, and got to experiment with advanced topics such as data mining and React.js. Two events in my university years have had major affects on me as a developer.</p>
                             )
-                            :(<p>In school I learned the fundamentals of programming with C++, tackled software engineering of both web and mobile applications, and got to experiment with advanced topics such as data mining and React.js. Two events in my university years have had major affects on me as a developer. First, taking a mobile applications course geared towards Android–and then teaching the course with Codepath.org–left me with a passion for mobile app development. Secondly, taking on a real world non-profit startup client and working as a web engineer with the most modern technologies left me excited to explore further possibilities. The web app was built with a MERN stack, or a MongoDB, Express.js, React.js, and Node.js stack. All of this history culminates in my extreme hunger to develop reliable, responsive, and revolutionary applications that users, such as the scientists at Berkeley Labs, can depend on.</p>)}
+                            :(<p>In school, I learned the fundamentals of programming with C++, tackled software engineering of both web and mobile applications, and got to experiment with advanced topics such as data mining and React.js. 
+                                Two events in my university years have had major affects on me as a developer. 
+                                First, taking a mobile applications course geared towards Android–and then teaching the course with Codepath.org–left me with passions for mobile app development and computer science education. 
+                                Secondly, taking on a real world non-profit startup client and working as a web engineer with a web app utilizing the most modern technologies left me excited to explore further possibilities. 
+                                The web app was built with a MERN stack, or a MongoDB, Express.js, React.js, and Node.js stack. 
+                                All of this history culminates in my extreme hunger to develop reliable, responsive, and revolutionary applications that users, such as the scientists at Berkeley Labs, can depend on.</p>)}
                 
                   
                         <div style={{textAlign:"center", marginBottom:"1.75em", marginTop:"2em"}}>
@@ -65,7 +70,10 @@ class About extends Component {
                                 <Media object src={Android} alt="Android Logo" style={{display:"inline", maxWidth:"40vw", maxHeight:"45vh", marginBottom:"1em"}}/>
                             </div>
                             {mobile &&
-                            (<p style={{textAlign:"left", marginBottom:"1.75em"}}>First, taking a mobile applications course geared towards Android–and then teaching the course with Codepath.org–left me with a passion for mobile app development. Secondly, taking on a real world non-profit startup client and working as a web engineer with the most modern technologies left me excited to explore further possibilities. The web app was built with a MERN stack, or a MongoDB, Express.js, React.js, and Node.js stack. All of this history culminates in my extreme hunger to develop reliable, responsive, and revolutionary applications that users, such as the scientists at Berkeley Labs, can depend on.</p>
+                            (<p style={{textAlign:"left", marginBottom:"1.75em"}}>First, taking a mobile applications course geared towards Android–and then teaching the course with Codepath.org–left me with passions for mobile app development and computer science education. 
+                            Secondly, taking on a real world non-profit startup client and working as a web engineer with a web app utilizing the most modern technologies left me excited to explore further possibilities. 
+                            The web app was built with a MERN stack, or a MongoDB, Express.js, React.js, and Node.js stack. 
+                            All of this history culminates in my extreme hunger to develop reliable, responsive, and revolutionary applications that users, such as the scientists at Berkeley Labs, can depend on.</p>
                             )}  
                         </div>
                     </div>

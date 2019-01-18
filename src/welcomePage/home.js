@@ -73,7 +73,7 @@ class Home extends Component {
                 <div className="align_and_space">
                     <div className="webNameDiv">
                         <h2 className="webName">Alec Levin</h2>
-                        <h3 className="webGeneral">Android and Web Engineer, Computer Science B.S.</h3>
+                        <h3 className="webGeneral">Mobile and Web (React.js) Engineer, Computer Science B.S.</h3>
                     </div>
 
                     <div>

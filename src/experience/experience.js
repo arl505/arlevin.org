@@ -32,7 +32,7 @@ class Experience extends Component {
                             <li className="myList">Planet Rocket - Full Stack Web Engineer (March 2018-Present)
                                 <ul className="myListWithBullets">
                                     <li className="myListWithBullets">Lead effort in redesigning and updating previous <a href="http://planetrocket.com">V1</a> codebase on LAMP (Linux, Apache, MySQL, and PHP) stack</li>
-                                    <li className="myListWithBullets">Designed and implemented <a href="https://dev.arlevin.org">V2</a> with a MERN (MongoDB, Express.js, React.js, and Node.js) stack deployed on an AWS Elastic Cloud Compute (EC2) instance serving the project with NGINX</li>
+                                    <li className="myListWithBullets">Designed and implemented <a href="https://pr2.arlevin.org">V2</a> with a MERN (MongoDB, Express.js, React.js, and Node.js) stack deployed on an AWS Elastic Cloud Compute (EC2) instance serving the project with NGINX</li>
                                     <li className="myListWithBullets">Specialized in full stack work, sending data between the client and server; first this was done with PHP, MySQL, and HTML, then with MongoDB, Axios, JSON, and React</li>
                                  </ul>
                             </li>
