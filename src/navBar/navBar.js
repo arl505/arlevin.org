@@ -220,12 +220,12 @@ componentDidMount(){
                   </NavItem>
 
                                     <NavItem onClick={() => this.closePopover()}>
-                    <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" id="ExperienceTab" className="NavbarItemsWithPadding">Résumé</a>
+                    <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" id="ExperienceTab" onClick={e => {initializeReactGA2();}}  className="NavbarItemsWithPadding">Résumé</a>
                   </NavItem>
                   
                   <NavItem id="PopoverFocus">
                   <Button style={{ padding:"0em", margin:"0em", border:"none", backgroundColor:"transparent", verticalAlign:"baseline"}}>
-                    <NavLink to="/contact" onTouchEnd={e => e.preventDefault()} onClick={e => {e.preventDefault(); initializeReactGA()}}  id="Popover1" className="NavbarItemsWithPadding">Contact</NavLink>
+                    <NavLink to="/contact" onTouchEnd={e => e.preventDefault()} onClick={e => {e.preventDefault(); initializeReactGA();}}  id="Popover1" className="NavbarItemsWithPadding">Contact</NavLink>
                     </Button>
                     <Popover style={{textAlign:"center"}} placement="bottom" isOpen={this.state.popoverOpen} target="PopoverFocus" toggle={this.toggle}>
                       <PopoverHeader>Connect with me</PopoverHeader>
@@ -298,11 +298,11 @@ componentDidMount(){
           </NavItem>
 
           <NavItem className="noBox" tabIndex="-1">
-            <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" className="NavbarItems">Résumé</a>
+            <a target="_blank" rel="noopener noreferrer" href="/resume.pdf" onClick={e => {initializeReactGA2();}} className="NavbarItems">Résumé</a>
           </NavItem>
 
           <NavItem className="noBox" tabIndex="-1">
-            <NavLink to="/contact" id="contactTab" className="NavbarItems" disabled="disabled" activeClassName="activeTab" onClick={() => {this.closeMenu(); initializeReactGA()}}>Contact</NavLink>
+            <NavLink to="/contact" id="contactTab" className="NavbarItems" disabled="disabled" activeClassName="activeTab" onClick={() => {this.closeMenu(); initializeReactGA();}}>Contact</NavLink>
           </NavItem>
         </Menu>
   
@@ -352,6 +352,11 @@ componentDidMount(){
 function initializeReactGA() {
   ReactGA.initialize('UA-132341230-1');
   ga("send", "event", "Contact", "clicked")
+}
+
+function initializeReactGA2() {
+  ReactGA.initialize('UA-132341230-1');
+  ga("send", "event", "resume", "viewed")
 }
 
 ReactDOM.render(
