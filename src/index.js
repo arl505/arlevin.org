@@ -8,7 +8,7 @@ import {isMobile as trueIsMobile} from 'react-device-detect';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 if(trueIsMobile){
-    serviceWorker.register();
+    serviceWorker.unregister();
 }
 else{
     serviceWorker.unregister();
