@@ -34,6 +34,10 @@ class Academics extends Component {
                                 LumberHacks Hackathon
                                 <ul className="myList">
                                     <li className="myList">
+                                        <strong>April 2019:</strong> planned and ran 2nd annual Hackathon as Vice President of the Computer Science Club.
+                                    </li>
+
+                                    <li className="myList">
                                         <strong>March 2018:</strong> worked as a member of a 4 person team to design and build a web application that took second place out of 50+ competitors. 
                                         The project was a prototype for a non-profit organization that sought to connect the 1200 non-profits of Humboldt county with eager volunteers looking for opportunities. 
                                         The application included scheduling abilities, allowed non-profits to market themselves, and was built with Oracle SQL*Plus, PHP, HTML, and CSS.
@@ -42,21 +46,16 @@ class Academics extends Component {
                             </li>
 
                             <li className="myList">
-                                Presidential Scholar
-                                <ul className="myList">
-                                    <li className="myList"><strong>December 2018:</strong> awarded to those who earn a GPA of 3.75 or higher while taking at least 12 units, essentially all A's. Earned while taking 20 units across 6 courses.</li>
-                                </ul>
-                            </li>
-                            <li className="myList">
                                 Dean's List Recipient
                                 <ul className="myList">
-                                    <li className="myList"><strong>May 2018:</strong> awarded to those who earn a GPA of 3.5 or higher while taking at least 12 units.</li>
+                                    <li className="myList"><strong>May 2019, May 2018:</strong> awarded to those who earn a GPA of 3.5 or higher while taking at least 12 units.</li>
                                 </ul>
                             </li>
+
                             <li className="myList">
                                 Presidential Scholar
                                 <ul className="myList">
-                                    <li className="myList"><strong>Decmber 2017:</strong> awarded to those who earn a GPA of 3.75 or higher while taking at least 12 units, essentially all A's. Earned while taking 4 computer science courses.</li>
+                                    <li className="myList"><strong>December 2018, December 2017:</strong> awarded to those who earn a GPA of 3.75 or higher while taking at least 12 units, essentially all A's. Earned while taking 20 units across 6 courses.</li>
                                 </ul>
                             </li>
                         </ul>
