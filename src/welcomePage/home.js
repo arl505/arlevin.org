@@ -73,13 +73,13 @@ class Home extends Component {
                 <div className="align_and_space">
                     <div className="webNameDiv">
                         <h2 className="webName">Alec Levin</h2>
-                        <h3 className="webGeneral">Mobile and Web (React.js) Engineer, Computer Science B.S.</h3>
+                        <h3 className="webGeneral">Full stack software engineer with expertise in enterprise Java (SpringBoot)</h3>
                     </div>
 
                     <div>
                         {centerText
-                        ?<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"center", marginBottom:"1em"}}>I am a passionate developer whose areas of interest span from progressive web and mobile application development to scientific computing of high-frequency data.</h4>
-                        :<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"left", marginBottom:"1em"}}>I am a passionate developer whose areas of interest span from progressive web and mobile application development to scientific computing of high-frequency data.</h4>}
+                        ?<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"center", marginBottom:"1em"}}>I am an enginner with Ford Motor Company working in the connected vehicle space. My passions span from backend web programming to scientific computing to Android development.</h4>
+                        :<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"left", marginBottom:"1em"}}>I am an enginner with Ford Motor Company working in the connected vehicle space. My passions span from backend web programming to scientific computing to Android development.</h4>}
                     </div>
                 </div>
             </div>

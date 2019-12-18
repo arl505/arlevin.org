@@ -25,7 +25,8 @@ class Experience extends Component {
                                 <ul className="myListWithBullets">
                                     <li className="myListWithBullets">Member of the Connected Vehicle Platform and Products (CVPP) group within the Smart Mobility division</li>
                                     <li className="myListWithBullets">Focused on using Java to create and deploy highly available and highly scalable APIs and applications that receive millions of requests per day</li>
-                                    <li className="myListWithBullets">Projects spaned from building mechanisms that allow users to connect to third party applications (navigation, etc.) to building systems which support future autonomous mobility</li>
+                                    <li className="myListWithBullets">Projects spanned from building mechanisms that allow users to connect to third party applications (navigation, etc.) to building systems which support future autonomous mobility</li>
+                                    <li className="myListWithBullets">People’s Choice Award winning team member at company wide hackathon</li>
                                 </ul>
                             </li>
 
