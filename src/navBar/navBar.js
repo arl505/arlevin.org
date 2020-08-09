@@ -4,7 +4,7 @@ import Home from '../welcomePage/home';
 import Academics from '../academics/academics';	
 import Experience from '../experience/experience';	
 import Contact from '../contact/contact';	
-import About from '../about/about';	
+import Skills from '../skills/skills';	
 import "../App.css"
 import ReactDOM from 'react-dom';
 import {Navbar, Media, Button, NavbarBrand, Nav, NavItem, Popover, PopoverBody, PopoverHeader} from 'reactstrap';
@@ -130,7 +130,7 @@ class NavBar extends Component {
     }
 
     // on other tab, set home inactive
-    else if(url.includes("about") || url.includes("academics") || url.includes("experience")){
+    else if(url.includes("skills") || url.includes("academics") || url.includes("experience")){
       if(this.state.homeColor !== "#B8B8B8")
       {
         this.setState({
@@ -223,15 +223,15 @@ class NavBar extends Component {
                       </NavItem>
 
                       <NavItem onClick={() => this.closePopover()}>
-                        <NavLink to="/about" activeClassName="activeTab" id="aboutTab" className="NavbarItemsWithPadding">About</NavLink>
-                      </NavItem>
-
-                      <NavItem onClick={() => this.closePopover()}>
                         <NavLink to="/academics" activeClassName="activeTab" id="academicsTab" className="NavbarItemsWithPadding">Academics</NavLink>
                       </NavItem>
                   
                       <NavItem onClick={() => this.closePopover()}>
                         <NavLink to="/experience" activeClassName="activeTab" id="ExperienceTab" className="NavbarItemsWithPadding">Experience</NavLink>
+                      </NavItem>
+
+                      <NavItem onClick={() => this.closePopover()}>
+                        <NavLink to="/skills" activeClassName="activeTab" id="skillsTab" className="NavbarItemsWithPadding">Skills</NavLink>
                       </NavItem>
 
                       <NavItem onClick={() => this.closePopover()}>
@@ -265,7 +265,7 @@ class NavBar extends Component {
                 <Switch>
                   {/* <Redirect from='/contact' to='/'/> */}
                   <Route path="/contact" component={Home}/>
-                  <Route path="/about" component={About}/>
+                  <Route path="/skills" component={Skills}/>
                   <Route path="/academics" component={Academics}/>
                   <Route path="/experience" component={Experience}/>
                   <Route path="/" component={Home}/> {/* this line comes last and will be the default (or no matches)*/}
@@ -288,15 +288,15 @@ class NavBar extends Component {
               </NavItem>
             
               <NavItem className="noBox" tabIndex="-1">
-                <NavLink to="/about" id="aboutTab" activeClassName="activeTab" className="NavbarItems" onClick={() => this.closeMenu()}>About</NavLink>
-              </NavItem>
-            
-              <NavItem className="noBox" tabIndex="-1">
                 <NavLink to="/academics" id="academicsTab" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Academics</NavLink>
               </NavItem>
 
               <NavItem className="noBox" tabIndex="-1">
                 <NavLink to="/experience" className="NavbarItems" activeClassName="activeTab" onClick={() => this.closeMenu()}>Experience</NavLink>
+              </NavItem>
+
+              <NavItem className="noBox" tabIndex="-1">
+                <NavLink to="/skills" id="skillsTab" activeClassName="activeTab" className="NavbarItems" onClick={() => this.closeMenu()}>Skills</NavLink>
               </NavItem>
 
               <NavItem className="noBox" tabIndex="-1">
@@ -315,7 +315,7 @@ class NavBar extends Component {
                 </Navbar>
               </div>
               <Switch>
-                <Route path="/about" component={About} />
+                <Route path="/skills" component={Skills} />
                 <Route path="/academics" component={Academics} />
                 <Route path="/experience" component={Experience}/>
                 <Route path="/contact" component={Contact} />

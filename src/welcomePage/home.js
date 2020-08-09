@@ -73,7 +73,7 @@ class Home extends Component {
                 <div className="align_and_space">
                     <div className="webNameDiv">
                         <h2 className="webName">Alec Levin</h2>
-                        <h3 className="webGeneral">Full stack software engineer with expertise in enterprise Java (SpringBoot)</h3>
+                        <h3 className="webGeneral">Full stack software engineer with expertise in Spring Boot (Java)</h3>
                     </div>
 
                     <div>
