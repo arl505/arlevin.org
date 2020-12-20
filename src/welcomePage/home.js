@@ -78,8 +78,8 @@ class Home extends Component {
 
                     <div>
                         {centerText
-                        ?<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"center", marginBottom:"1em"}}>I am an enginner with Ford Motor Company working in the connected vehicle space. My passions span from backend web programming to scientific computing to Android development.</h4>
-                        :<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"left", marginBottom:"1em"}}>I am an enginner with Ford Motor Company working in the connected vehicle space. My passions span from backend web programming to scientific computing to Android development.</h4>}
+                        ?<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"center", marginBottom:"1em"}}>I am an engineer with Ford Motor Company working in the connected vehicle space. My passions span from backend web programming to scientific computing to Android development.</h4>
+                        :<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"left", marginBottom:"1em"}}>I am an engineer with Ford Motor Company working in the connected vehicle space. My passions span from backend web programming to scientific computing to Android development.</h4>}
                     </div>
                 </div>
             </div>
