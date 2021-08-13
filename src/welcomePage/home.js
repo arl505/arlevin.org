@@ -73,13 +73,13 @@ class Home extends Component {
                 <div className="align_and_space">
                     <div className="webNameDiv">
                         <h2 className="webName">Alec Levin</h2>
-                        <h3 className="webGeneral">Full stack software engineer with expertise in Spring Boot (Java)</h3>
+                        <h3 className="webGeneral">Software engineer with expertise in Spring Boot (Java)</h3>
                     </div>
 
                     <div>
                         {centerText
-                        ?<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"center", marginBottom:"1em"}}>I am an engineer with Ford Motor Company working in the connected vehicle space. My passions span from backend web programming to scientific computing to Android development.</h4>
-                        :<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"left", marginBottom:"1em"}}>I am an engineer with Ford Motor Company working in the connected vehicle space. My passions span from backend web programming to scientific computing to Android development.</h4>}
+                        ?<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"center", marginBottom:"1em"}}>As a fast and adaptive learner, I excel as an individual contributor. As a highly methodical and organized person, I likewise excel as a lead. Leveraging the sum of these skills, I help organizations to create incredible and memorable technology.</h4>
+                        :<h4 className="webGeneral webOutro" style={{marginTop:"1em", textAlign:"left", marginBottom:"1em"}}>As a fast and adaptive learner, I excel as an individual contributor. As a highly methodical and organized person, I likewise excel as a lead. Leveraging the sum of these skills, I help organizations to create incredible and memorable technology.</h4>}
                     </div>
                 </div>
             </div>

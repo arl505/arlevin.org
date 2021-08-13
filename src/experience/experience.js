@@ -21,13 +21,13 @@ class Experience extends Component {
                         <li className="myList"><h3>Work</h3></li>
                         <ul className="myList">
 
-                            <li className="myList">Ford Motor Company - Full Stack Software Engineer (June 2019-Present)
+                            <li className="myList">Ford Motor Company - Anchor Engineer (June 2019 - Present)
                                 <ul className="myListWithBullets">
-                                    <li className="myListWithBullets">Enabled vehicle connectivity through advanced implementations of common authentication flows for both client and server using both OAuth 1 and 2</li>
-                                    <li className="myListWithBullets">Created cloud native applications designed to be used by millions of vehicles</li>
-                                    <li className="myListWithBullets">Owned product lifecycle: designing, coding, tuning, deploying, and maintaining</li>
-                                    <li className="myListWithBullets">Designed services for performance and made use of modern agile practices</li>
-                                    <li className="myListWithBullets">Agency employee via TekSystems, Inc.</li>
+                                    <li className="myListWithBullets">Team tech lead, focused on high level direction of product and team</li>
+                                    <li className="myListWithBullets">Developed and maintained high performance backend system processing millions of vehicle transactions per day, at several hundred transactions per second</li>
+                                    <li className="myListWithBullets">Led team on experiments of collaborative programming, test driven development, trunk based development, pipeline automation, and other modern agile practices</li>
+                                    <li className="myListWithBullets">Enabled vehicle connectivity using Spring Boot with various OAuth 2.0 flows</li>
+                                    <li className="myListWithBullets">Started as agency employee via TekSystems, Inc. (June 2019 - November 2020)</li>
                                 </ul>
                             </li>
 
@@ -38,7 +38,7 @@ class Experience extends Component {
                                 </ul>
                             </li>
 
-                            <li className="myList">Planet Rocket - Web Engineer (March 2018-May 2019)
+                            <li className="myList">Planet Rocket - Web Engineer (March 2018 - May 2019)
                                 <ul className="myListWithBullets">
                                     <li className="myListWithBullets">Maintained <a href="https://pr1.arlevin.org">legacy LAMP stack application</a> (Linux, Apache, MySQL, and PHP)</li>
                                     <li className="myListWithBullets">Wrote <a href="https://pr2.arlevin.org">new MERN stack application</a> (MongoDB, Express.js, React.js, and Node.js)</li>

@@ -18,59 +18,25 @@ class Skills extends Component {
         <div style={{marginTop:"5.5em", marginBottom:"2em"}}>   
           <ul className="myList">
             <li className="myList"><h3>Skills</h3></li>
-            <ul className="myList">
-              <li className="myList">Languages, Frameworks, and Systems
-                <ul className="myList">
-                  
-                  <li className="myListWithBullets">Java</li>
-                    <ul className="myList">
-                    <li className="myList" style={{marginBottom: '0em'}}>Spring Boot (Gradle + Java)</li>
-                    <li className="myList" style={{marginBottom: '0em'}}>Android</li>
-                  </ul>
-                  
+              <ul>
+                <div style={{marginBottom: "2em"}}>
+                  <li className="myList">Backend microservice architecture</li>
+                  <li className="myList">Progressive CI/CD (Jenkins)</li>
+                  <li className="myList">REST API design and implementation</li>
+                </div>
 
-                  <li className="myListWithBullets">JavaScript</li>
-                    <ul className="myList">
-                      <li className="myList" style={{marginBottom: '0em'}}>React.js</li>
-                      <li className="myList" style={{marginBottom: '0em'}}>Express.js</li>
-                    </ul>
-
-                  <li className="myListWithBullets">SQL</li>
-                  <ul className="myList">
-                      <li className="myList" style={{marginBottom: '0em'}}>Microsoft SQL Server (T-SQL)</li>
-                      <li className="myList" style={{marginBottom: '0em'}}>MySQL</li>
-                    </ul>
-
-                  <li className="myListWithBullets">System administration</li>
-                    <ul className="myList">
-                      <li className="myList" style={{marginBottom: '0em'}}>CentOS 8</li>
-                      <li className="myList" style={{marginBottom: '0em'}}>Ubuntu</li>
-                      <li className="myList" style={{marginBottom: '0em'}}>Red Hat</li>
-                      <li className="myList" style={{marginBottom: '0em'}}>WindowsServer</li>
-                    </ul>
-
-                  <li className="myListWithBullets">C++</li>
-                </ul>
-              </li>
-              
-              <li className="myList">Clouds
-                <ul className="myList">
-                  <li className="myListWithBullets">AWS</li>
-                  <li className="myListWithBullets">Azure</li>
-                  <li className="myListWithBullets">Pivotal Cloud Foundry</li>
-                  <li className="myListWithBullets">OpenShift</li>
-                </ul>
-              </li>
-
-              <li className="myList">App patterns
-                <ul className="myList">
-                  <li className="myListWithBullets">System design and architecture (high performance, scalability, and reliability)</li>
-                  <li className="myListWithBullets">Web security (OAuth 1 & 2)</li>
-                  <li className="myListWithBullets">REST API design and implementation</li>
-                  <li className="myListWithBullets">GitHub + Jenkins CI/CD</li>
-                </ul>
-              </li>
-            </ul>
+                <div style={{marginBottom: "2em"}}>
+                  <li className="myList">Spring Boot (Java)</li>
+                  <li className="myList">JavaScript (React)</li>
+                  <li className="myList">SwiftUI</li>
+                  <li className="myList">Android (Java)</li>
+                </div>
+                
+                <div>
+                  <li className="myList">Azure</li>
+                  <li className="myList">Cloud Foundry (VMware Tanzu)</li>
+                </div>
+              </ul>
           </ul>
         </div>
       </Fade>
