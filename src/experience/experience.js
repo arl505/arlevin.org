@@ -21,7 +21,7 @@ class Experience extends Component {
                         <li className="myList"><h3>Work</h3></li>
                         <ul className="myList">
 
-                            <li className="myList">Ford Motor Company - Anchor Engineer (June 2019 - Present)
+                            <li className="myList">Ford Motor Company - Lead Software Engineer (June 2019 - December 2021)
                                 <ul className="myListWithBullets">
                                     <li className="myListWithBullets">Team tech lead, focused on high level direction of product and team</li>
                                     <li className="myListWithBullets">Developed and maintained high performance backend system processing millions of vehicle transactions per day, at several hundred transactions per second</li>
