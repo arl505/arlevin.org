@@ -20,21 +20,26 @@ class Skills extends Component {
             <li className="myList"><h3>Skills</h3></li>
               <ul>
                 <div style={{marginBottom: "2em"}}>
-                  <li className="myList">Backend microservice architecture</li>
-                  <li className="myList">Progressive CI/CD (Jenkins)</li>
-                  <li className="myList">REST API design and implementation</li>
+                  <li className="myList">Java</li>
+                  <li className="myList">GoLang</li>
+                  <li className="myList">Ruby</li>
+                  <li className="myList">JavaScript (React)</li>
+                  <li className="myList">SwiftUI</li>
                 </div>
 
                 <div style={{marginBottom: "2em"}}>
-                  <li className="myList">Spring Boot (Java)</li>
-                  <li className="myList">JavaScript (React)</li>
-                  <li className="myList">SwiftUI</li>
-                  <li className="myList">Android (Java)</li>
+                  <li className="myList">Linux command line</li>
+                  <li className="myList">Spring and SpringBoot</li>
+                  <li className="myList">AWS</li>
+                  <li className="myList">Azure</li>
+                  <li className="myList">Cloud Foundry (VMware Tanzu)</li>
                 </div>
                 
                 <div>
-                  <li className="myList">Azure</li>
-                  <li className="myList">Cloud Foundry (VMware Tanzu)</li>
+                  <li className="myList">Backend service architecture</li>
+                  <li className="myList">Critical system operations</li>
+                  <li className="myList">Deployment pipeline design and Jenkins</li>
+                  <li className="myList">Android (Java)</li>
                 </div>
               </ul>
           </ul>
